@@ -9,5 +9,8 @@ namespace DatingApp.API.Data
         public DataContext(DbContextOptions<DataContext> options) : base (options) {}
 
         public DbSet<Value> Values { get; set; }
+        // dotnet ef migrations add AddUserEntity
+        // dotnet ef database update
+        public DbSet<User> Users { get; set; }
     }
 }
